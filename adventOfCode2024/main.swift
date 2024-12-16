@@ -34,12 +34,20 @@ do {
     right.sort()
     
     var distances: [Int] = []
+    var similarityScore = 0
     
     for (index, num) in left.enumerated() {
         distances.append(abs(num - right[index]))
+        
+        for secondNum in right {
+            if num == secondNum {
+                similarityScore += num
+            }
+        }
     }
     
     print(distances.reduce(0, +))
+    print(similarityScore)
 } catch {
     print("Error: \(error.localizedDescription)")
 }
