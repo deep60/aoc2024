@@ -6,7 +6,7 @@ struct UnsafeReport {
 }
 
 func day02() {
-    let fileName = "day02.txt"
+    let fileName = "data02.txt"
     let currentPath = FileManager.default.currentDirectoryPath
     let filePath = "\(currentPath)/\(fileName)"
 
