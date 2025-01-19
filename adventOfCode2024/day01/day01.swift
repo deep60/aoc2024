@@ -2,7 +2,7 @@ import Foundation
 
 
 func day01() {
-    let filename = "data.txt"
+    let filename = "data01.txt"
     let currentPath = FileManager.default.currentDirectoryPath
     let filePath = "\(currentPath)/\(filename)"
     
